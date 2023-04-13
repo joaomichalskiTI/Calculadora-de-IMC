@@ -5,38 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <section>
+    <main class="tudo">
+        <section class="imagem">
             <img src="imagem.svg" alt="">
         </section>
         <section>
             <form id="form">
                 <h1 id="title">
-                    CALCULADORA
+                    CALCULADORA - IMC
+                    <hr>
                 </h1>
-                <div>
-                    <label for="peso">
-                        Peso em Kg
-                    </label>
-                    <div>
-                        <i class="fa-solid fa-weight-scale"></i>
-                        <input type="number" id="peso" required>
-                        <span>Kg</span>
+                    <div class="peso">
+                        <label for="peso">
+                            Peso em Kg
+                        </label>
+                        <div class="peso-input">
+                            <i class="fa-solid fa-weight-scale"></i>
+                            <input type="number" id="peso" required>
+                            <span>Kg</span>
+                        </div>
                     </div>
-                    <div>
+                    <div class="altura">
                         <label for="altura">
                             Altura em cm
                         </label>
-                        <div>
-                            
+                        <div class="altura-input">
+                            <i class="fa-solid fa-ruler"></i>     
+                            <input type="number" id="altura" required>
+                            <span>Cm</span>
                         </div>
                     </div>
-
-
-                </div>
+                    <button>Calcular</button>
+                <hr class="hr-imc">
+                <p>Seu IMC</p>
+                <hr class="hr-imc">
             </form>
         </section>
     </main>

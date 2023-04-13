@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background: #18181b;
+}
+.tudo {
+    display: flex;
+}
+img {
+    height: 80vh;
+    width: 50vw;
+    position: absolute;
+    top: 12vh;
+    left: 8vw;
+    transition: 1s;
+
+}
+img:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+form {
+    background: #262626;
+    color: white;
+    position: absolute;
+    top: 14vh;
+    left: 62vw;
+    height: 70vh;
+    width: 28vw;
+}
+form hr {
+    width: 70%;
+    height: 0.2vh;
+    border: none;
+    position: absolute;
+    left: 4.3vw;
+    background: rgb(23, 207, 23);
+}
+form h1 {
+    text-align: center;
+    margin-top: 7vh;
+}
+.peso {
+    height: 10vh;
+    width: 100%;
+}
+.peso label {
+    margin-left: 3vw;
+}
+.peso-input {
+    display: flex;
+    align-items: center;
+    background: #3f3f46;
+    width: 80%;
+    height: 6.5vh;
+}
+.peso-input:hover i {
+    color: rgb(23, 207, 23);
+    transition: 0.4s;
+}
+.peso-input span {
+    margin-right: 1vw;
+}
+.peso-input i {
+    font-size: 1.6em;
+    margin-right: 0.3vw;
+    margin-left: 1vw;
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.645);
+}
+.peso .peso-input {
+    margin-left: 3vw;
+}
+.peso-input input {
+    height: 6.5vh;
+    margin-right: 0.3vw;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 80%;
+    padding: 0.5vw;
+    color: white;
+}
+.altura {
+    height: 10vh;
+    width: 100%;
+}
+.altura label {
+    margin-left: 3vw;
+}
+.altura-input {
+    display: flex;
+    align-items: center;
+    background: #3f3f46;
+    width: 80%;
+    height: 6.5vh;
+}
+.altura-input span {
+    margin-right: 1vw;
+}
+.altura .altura-input {
+    margin-left: 3vw;
+}
+.altura-input input {
+    height: 6.5vh;
+    border: none;
+    width: 80%;
+    background: transparent;
+    outline: none;
+    margin-right: 0.3vw;
+    padding: 0.5vw;
+    color: white;
+}
+.altura-input i {
+    font-size: 1.7em;
+    margin-right: 0.3vw;
+    margin-left: 1vw;
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.645);
+}
+.altura-input:hover i {
+    color: rgb(23, 207, 23);
+    transition: 0.4s;
+}

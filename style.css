@@ -16,7 +16,6 @@ img {
     top: 12vh;
     left: 8vw;
     transition: 1s;
-
 }
 img:hover {
     transform: scale(1.05);
@@ -41,11 +40,12 @@ form hr {
 }
 form h1 {
     text-align: center;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 .peso {
     height: 10vh;
     width: 100%;
+    margin-top: 5%;
 }
 .peso label {
     margin-left: 3vw;
@@ -124,4 +124,88 @@ form h1 {
 .altura-input:hover i {
     color: rgb(23, 207, 23);
     transition: 0.4s;
+}
+form button {
+    background-color: rgb(23, 207, 23);
+    border: none;
+    position: absolute;
+    top: 36vh;
+    left: 8vw;
+    width: 12vw;
+    height: 4vh;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+}
+form button:hover {
+    background-color: rgb(21, 107, 21);
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.742);
+}
+#cx-resultado {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 40vh ;
+    margin-top: 10%;
+}
+.hr-imc1 {
+    top: 0
+}
+.hr-imc {
+    top: 15vh
+}
+.divres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 5vw;
+    margin-left: 15%;
+    gap: 10%;
+    border-right: 1.5px solid #3b3737 ;
+    margin-top: 3%;
+}
+#resul-imc {
+    font-size: 1.6rem;
+    margin-right: 1%;
+}
+#frase {
+    position: absolute;
+    top: 0.2vh;
+    left: 8.2vw;
+    margin-left: 4%;
+    width: 50%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7vw;
+    margin-top: 2.5%;
+    overflow-wrap: break-word;
+
+}
+#frase p {
+    overflow-wrap: break-word;
+}
+.info {
+    position: absolute;
+    top: 18vh;
+    left: 6vw;
+    transition: 0.8s;
+}
+.info:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.info a {
+    color:rgb(23, 207, 23);
+}
+.info a:hover {
+    color: rgb(21, 107, 21);;
 }

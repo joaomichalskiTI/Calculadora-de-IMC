@@ -11,7 +11,7 @@
 <body>
     <main class="tudo">
         <section class="imagem">
-            <img src="imagem.svg" alt="">
+            <img src="imagem.svg" alt=>
         </section>
         <section>
             <form id="form">
@@ -26,25 +26,34 @@
                         <div class="peso-input">
                             <i class="fa-solid fa-weight-scale"></i>
                             <input type="number" id="peso" required>
-                            <span>Kg</span>
+                            <span>kg</span>
                         </div>
                     </div>
                     <div class="altura">
                         <label for="altura">
-                            Altura em cm
+                            Altura em metros
                         </label>
                         <div class="altura-input">
                             <i class="fa-solid fa-ruler"></i>     
-                            <input type="number" id="altura" required>
-                            <span>Cm</span>
+                            <input type="number" min="1" step="0.01"  id="altura" required>
+                            <span>cm</span>
                         </div>
                     </div>
-                    <button>Calcular</button>
-                <hr class="hr-imc">
-                <p>Seu IMC</p>
-                <hr class="hr-imc">
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <div id="cx-resultado">
+                        <hr class="hr-imc1">
+                        <div class="divres">
+                            <p>Seu IMC:</p>
+                             <p id="resul-imc"></p>
+                        </div>
+                        <p id="frase"></p>
+                        <hr class="hr-imc">
+                        <div class="info">
+                            <a href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html" target="_blank">Saiba mais sobre IMC clicando aqui.</a>
+                        </div>
+                    </div>
             </form>
         </section>
-    </main>
+    </main><script src="script.js"></script>
 </body>
 </html>

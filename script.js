@@ -1,3 +1,5 @@
+/*calculadora de IMC*/
+
 const form = document.getElementById('form');
 const caixa = document.getElementById('cx-resultado');
 const resultado = document.getElementById('resul-imc');
@@ -35,12 +37,38 @@ function calcular() {
         resultado.innerHTML = imc1
         alerta.innerHTML = "Cuidado! </br>Voce está com </br>obesidade severa!"
 
-    } else {
+    } else if(imc1 > 40) {
         caixa.style.display = "block";
         resultado.innerHTML = imc1
         alerta.innerHTML = "Cuidado! </br>Voce está com </br>obesidade mórbida!"
     }
-    console.log(imc);
 }   
-console.log(calcular)
 
+/*botões para mudar de uma calculadora para outra*/
+
+var aparecerImc = document.querySelector(".imcCalculo");
+var aparecerCal = document.querySelector(".calorias-calculo");
+let butonIMC = document.querySelector(".clc-imc");
+let butonCalorias = document.querySelector(".clc-cal");
+
+
+function imc() {
+    aparecerImc.style.display = "block";
+    aparecerCal.style.display = "none";
+    butonIMC.style.color = "rgb(23, 207, 23)";
+    butonCalorias.style.color = "white";
+}
+
+function calorias() {
+    aparecerImc.style.display = "none";
+    aparecerCal.style.display = "block";
+    butonIMC.style.color = "white";
+    butonCalorias.style.color = "rgb(23, 207, 23)";
+}
+
+/*função para calcular as calorias*/ 
+
+function calculate() {
+    const result = document.getElementById('result');
+    const campo = document.querySelector('.caixaResultado');
+}

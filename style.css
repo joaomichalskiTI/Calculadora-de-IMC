@@ -21,6 +21,9 @@ img:hover {
     transform: scale(1.05);
     transition: 1s;
 }
+.imcCalculo {
+    display: block;
+}
 form {
     background: #262626;
     color: white;
@@ -29,6 +32,8 @@ form {
     left: 62vw;
     height: 70vh;
     width: 28vw;
+    border-radius: 5px;
+    border: solid 1px white;
 }
 form hr {
     width: 70%;
@@ -208,4 +213,238 @@ form button:hover {
 }
 .info a:hover {
     color: rgb(21, 107, 21);;
+}
+.opçoes {
+    width: 28vw;
+    height: 6vh;
+    position: absolute;
+    top: 7vh;
+    left: 62vw;
+    display: flex;
+    align-items: center;
+    gap: 25%;
+}
+/*parte 2*/
+.calorias-calculo h1 {
+    width: 95%;
+    text-align: center;
+    margin-left: 3%;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 8%;
+    border-bottom: solid 0.3vh rgb(23, 207, 23);
+}
+.formulario {
+    color: white;
+}
+.masc-fem {
+    height: 5vh;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.masc-fem p {
+    display: flex;
+    color: white;
+}
+.masc-fem p label {
+    margin-right: 1.5%;
+}
+.masc-fem p input{
+    margin-left: 2%;
+
+}
+.clc-imc {
+    font-size: 1.1em;
+    width: 15%;
+    height: 70%;
+    margin-left: 20%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color:rgb(23, 207, 23);
+}
+.clc-cal {
+    font-size: 1.1em;
+    width: 20%;
+    height: 70%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.calorias-calculo {
+    display: none;
+    background: #262626;
+    position: absolute;
+    height: 70vh;
+    width: 28vw;
+    top: 14vh;
+    left: 62vw;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+.altura-cal {
+    height: 10vh;
+    width: 100%;
+}
+.altura-cal label {
+    height: 10vh;
+    width: 100%;
+    margin-left: 11%;
+}
+.altura-cal2 {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    background: #3f3f46;
+    width: 80%;
+    height: 6.5vh;
+}
+.altura-cal span {
+    margin-right: 1vw;
+}
+.altura .altura-cal {
+    margin-left: 3vw;
+}
+.altura-cal input {
+    height: 6.5vh;
+    border: none;
+    width: 80%;
+    background: transparent;
+    outline: none;
+    margin-right: 0.3vw;
+    padding: 0.5vw;
+    color: white;
+}
+.altura-cal i {
+    font-size: 1.7em;
+    margin-right: 0.3vw;
+    margin-left: 1vw;
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.645);
+}
+.altura-cal :hover i {
+    color:rgb(23, 207, 23);
+    transition: 0.4s;
+}
+.peso-cal {
+    height: 10vh;
+    width: 100%;
+}
+.peso-cal label {
+    height: 10vh;
+    width: 100%;
+    margin-left: 11%;
+}
+.peso-cal2 {
+    display: flex;
+    align-items: center;
+    background: #3f3f46;
+    width: 80%;
+    height: 6.5vh;
+}
+.peso-cal2 span {
+    margin-right: 1vw;
+}
+.peso-cal .peso-cal2 {
+    margin-left: 3vw;
+}
+.peso-cal2 input {
+    height: 6.5vh;
+    border: none;
+    width: 80%;
+    background: transparent;
+    outline: none;
+    margin-right: 0.3vw;
+    padding: 0.5vw;
+    color: white;
+    transition: 0.4s;
+
+}
+.peso-cal2:hover i {
+    color:rgb(23, 207, 23);
+    transition: 0.4s;
+}
+.peso-cal2 i {
+    font-size: 1.7em;
+    margin-right: 0.3vw;
+    margin-left: 1vw;
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.645);
+}
+.idade {
+    height: 10vh;
+    width: 100%;
+}
+.idade label {
+    margin-left: 3vw;
+}
+.idade-input {
+    display: flex;
+    align-items: center;
+    background: #3f3f46;
+    width: 80%;
+    height: 6.5vh;
+}
+.idade-input:hover i {
+    color: rgb(23, 207, 23);
+    transition: 0.4s;
+}
+.idade-input span {
+    margin-right: 1vw;
+}
+.idade-input i {
+    font-size: 1.6em;
+    margin-right: 0.3vw;
+    margin-left: 1vw;
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.645);
+}
+.idade .idade-input {
+    margin-left: 3vw;
+}
+.idade-input input {
+    height: 6.5vh;
+    margin-right: 0.3vw;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 80%;
+    padding: 0.5vw;
+    color: white;
+}
+.calorias-calculo button {
+    background-color: rgb(23, 207, 23);
+    border: none;
+    position: absolute;
+    top: 48vh;
+    left: 8vw;
+    width: 12vw;
+    height: 4vh;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+}
+.calorias-calculo button:hover {
+    background-color: rgb(21, 107, 21);
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.742);
+}
+.caixaResultado {
+    display: none;
+    height: 13vh;
+    width: 26vw;
+    position: absolute;
+    top: 55vh;
+    left: 1vw;
+    border-top: solid 0.3vh rgb(23, 207, 23);
+    border-bottom: solid 0.3vh rgb(23, 207, 23);
+    text-align: center;
+    color: white;
+}
+.caixaResultado p {
+    margin-top: 8%;
 }

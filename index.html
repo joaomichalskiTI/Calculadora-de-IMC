@@ -9,11 +9,15 @@
     <title>Document</title>
 </head>
 <body>
+    <section class="opçoes">
+        <button onclick="imc()" class="clc-imc">IMC</button>
+        <button onclick="calorias()" class="clc-cal">CALORIAS</button>
+    </section>
     <main class="tudo">
         <section class="imagem">
             <img src="imagem.svg" alt=>
         </section>
-        <section>
+        <section class="imcCalculo">
             <form id="form">
                 <h1 id="title">
                     CALCULADORA - IMC
@@ -35,7 +39,7 @@
                         </label>
                         <div class="altura-input">
                             <i class="fa-solid fa-ruler"></i>     
-                            <input type="number" min="1" step="0.01"  id="altura" required>
+                            <input type="number" id="altura" required>
                             <span>cm</span>
                         </div>
                     </div>
@@ -53,6 +57,53 @@
                         </div>
                     </div>
             </form>
+        </section>
+        <section class="calorias-calculo">
+            <h1>CALCULADORA - CALORIAS DIÁRIAS</h1>
+            <div class="masc-fem">
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="mas" required>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem" required>
+                    <label for="fem">Feminino</label>
+                </p>
+            </div>
+            <div class="formulario">
+                <div class="peso-cal">
+                    <label for="peso2">
+                        Peso em kg:
+                    </label>
+                    <div class="peso-cal2">
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <input type="number" id="" required>
+                        <span>kg</span>
+                    </div>
+                </div>
+                <div class="altura-cal">
+                    <label for="altura2">
+                        Altura em metros
+                    </label>
+                    <div class="altura-cal2">
+                        <i class="fa-solid fa-ruler"></i>     
+                        <input type="number"id="" required>
+                        <span>cm</span>
+                    </div>
+                </div>
+                <div class="idade">
+                    <label for="idade">
+                        Idade:
+                    </label>
+                    <div class="idade-input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="number" required>
+                        <span>anos</span>
+                    </div>
+                </div>
+            </div>
+            <button onclick="calculate()">Calcular</button>
+            <div class="caixaResultado">
+                <p id="result">sua média de calorias é:1405kcal</p>
+            </div>
         </section>
     </main><script src="script.js"></script>
 </body>

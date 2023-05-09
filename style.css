@@ -160,10 +160,14 @@ form button:hover {
     margin-top: 10%;
 }
 .hr-imc1 {
-    top: 0
+    top: 0;
+    left: 1.5vw;
+    width: 90%;
 }
 .hr-imc {
-    top: 15vh
+    top: 15vh;
+    left: 1.5vw;
+    width: 90%;
 }
 .divres {
     display: flex;
@@ -435,7 +439,7 @@ form button:hover {
 }
 .caixaResultado {
     display: none;
-    height: 13vh;
+    height: 11vh;
     width: 26vw;
     position: absolute;
     top: 55vh;

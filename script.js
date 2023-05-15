@@ -106,4 +106,4 @@ Mulheres:
  447,6 + (9,2 x peso em kg) + (3,1 x altura em cm) - (4,3 x idade em anos) 
       447.6 + (9.2 * kgCalorias) + (3.1 * alturaCalorias) - (4.3 * idadeCalorias)
 
- */.
+ */

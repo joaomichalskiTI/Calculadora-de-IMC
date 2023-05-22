@@ -463,6 +463,10 @@ form button:hover {
     justify-content: center;
    }
 
+   #title hr {
+    width: 65%;
+    left: 18%;
+   }
    .opcoes {
     position: absolute;
     left: 25%;
@@ -488,16 +492,31 @@ form button:hover {
    }
    
    .divres {
-        margin: 5%;
-        width: 13%;
+    margin: 2%;
+    padding: 2%;
+    width: 13%;
+   }
+
+   #cx-resultado {
+    top: 55%;
+   }
+
+   .hr-imc1 {
+    width: 65%;
+    left: 4%
+   }
+
+   .hr-imc {
+    width: 65%;
+    left: 4%
    }
 
    #resul-imc {
-    margin: 0;
+    font-size: 20px;
    }
 
    #frase {
-    left: 30%;
+    left: 20%;
    }
 
 

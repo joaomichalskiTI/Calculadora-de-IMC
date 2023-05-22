@@ -464,7 +464,7 @@ form button:hover {
 
    form {
     position: absolute;
-    left: 13%;
+    left: 10%;
     width: 300px;
    }
 
@@ -498,7 +498,7 @@ form button:hover {
 
    .calorias-calculo {
     position: absolute;
-    left: 25%;
+    left: 10%;
     width: 300px;
    }
 }

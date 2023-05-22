@@ -6,13 +6,16 @@ const resultado = document.getElementById('resul-imc');
 const alerta = document.getElementById('frase');
 
 
-function renderizar() {
-    caixa.style.display = "block";
-    resultado.innerHTML = imc1; 
 
-}
 
 function calcular() {
+
+    function renderizar() {
+        caixa.style.display = "block";
+        resultado.innerHTML = imc1; 
+    
+    }
+    
     const peso = parseInt(document.getElementById('peso').value);
     const altura = parseFloat(document.getElementById('altura').value);
     const imc = (peso / (altura * altura));

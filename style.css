@@ -218,7 +218,7 @@ form button:hover {
 .info a:hover {
     color: rgb(21, 107, 21);;
 }
-.opçoes {
+.opcoes {
     width: 28vw;
     height: 6vh;
     position: absolute;
@@ -451,4 +451,54 @@ form button:hover {
 }
 .caixaResultado p {
     margin-top: 8%;
+}
+@media(max-width: 500px) {
+   .imagem {
+    display: none;
+   }
+
+   .opcoes {
+    position: absolute;
+    left: 28%;
+   }
+
+   form {
+    position: absolute;
+    left: 15%;
+    width: 300px;
+   }
+
+   .peso-input {
+    width: 90%;
+   }
+
+   .altura-input {
+    width: 90%;
+   }
+   
+   form button {
+    width: 80px;
+    top: 45%;
+    left: 35%;
+   }
+   
+   .divres {
+        margin: 5%;
+        width: 25%;
+   }
+
+   #resul-imc {
+    margin: 0;
+   }
+
+   #frase {
+    left: 30%;
+   }
+
+
+   .calorias-calculo {
+    position: absolute;
+    left: 15%;
+    width: 300px;
+   }
 }

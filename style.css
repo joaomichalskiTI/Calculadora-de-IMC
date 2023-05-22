@@ -457,14 +457,19 @@ form button:hover {
     display: none;
    }
 
+   body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
    .opcoes {
     position: absolute;
     left: 25%;
    }
 
    form {
-    position: absolute;
-    left: 10%;
+    position:static;
     width: 300px;
    }
 
@@ -497,8 +502,7 @@ form button:hover {
 
 
    .calorias-calculo {
-    position: absolute;
-    left: 10%;
+    position:static;
     width: 300px;
    }
 }

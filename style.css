@@ -519,9 +519,30 @@ form button:hover {
     left: 20%;
    }
 
-
    .calorias-calculo {
     position:static;
     width: 300px;
+   }
+
+   .calorias-calculo button {
+    width: 80px;
+    top: 60%;
+    left: 35%;
+   }
+   
+   .altura-cal2 {
+    margin-left: 4%;
+   }
+
+   .altura-cal label {
+    margin-left: 5%;
+   }
+
+   .peso-cal label {
+    margin: 5%;
+   }
+
+   .idade label {
+    margin-left: 5%;
    }
 }
